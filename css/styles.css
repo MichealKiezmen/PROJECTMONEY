@@ -1,0 +1,574 @@
+/* GLOBAL CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+}
+
+img {
+  object-fit: cover;
+  object-position: center center;
+  /* aspect-ratio: 1080/1350; */
+}
+
+button:hover {
+  box-shadow: 3px 2px rgb(182, 179, 179);
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+::placeholder {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* NAVBAR */
+nav {
+  padding: 10px;
+  background-color: rgb(20, 135, 180);
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 15px;
+}
+
+nav ul li a:hover {
+  transition: linear 1s;
+}
+
+a.logo img {
+  height: 50px;
+}
+
+.menu-bar {
+  margin: 15px;
+  animation-name: rotateIn;
+  animation-fill-mode: forwards;
+}
+
+.menu-bar-show {
+  animation-name: rotateOut;
+  animation-fill-mode: forwards;
+}
+
+.menu-links {
+  display: none;
+  padding: 15px;
+  /* animation-duration: 0.5s;
+      animation-name: slideOut;
+      animation-fill-mode: forwards; */
+}
+
+.menu-links a {
+  display: block;
+}
+
+.menu-links-show {
+  display: block;
+  animation-duration: 0.8s;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  width: 100%;
+  text-align: center;
+}
+
+/* MAIN SECTION */
+.hero-section,
+.about-main {
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: rgb(20, 135, 180); */
+  border-radius: 0 0 55% 45%;
+  background: url("../logo/market.jpg") no-repeat center center/cover;
+  padding: 30px 10px;
+  box-shadow: inset 100px 80px 200px black;
+  color: white;
+}
+
+.hero-content-container .hero-button-container button,
+.hero-content-container .hero-button-container h2,
+.hero-content-container .hero-button-container p {
+  margin: 10px;
+}
+
+
+/* BUTTONS */
+.hero-content-container .hero-button-container button,
+.section-4b button,
+.log-in-page form button,
+.about-main button {
+  display: inline;
+  border: 0.7px white solid;
+  border-radius: 50px;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+
+
+.learn,
+.invest:hover,
+.section-4b button,
+.log-in-page form button,
+.about-main button {
+  background-color: rgb(17, 110, 153);
+}
+
+
+
+.invest,
+.learn:hover {
+  background-color: transparent;
+  transition: ease-in-out 0.5s;
+}
+
+/* BUTTON ENDS */
+
+/* IMPORTANT */
+.hero-content-container .hero-image-container,
+.section-1b,
+.section-3b,
+.section-4,
+.log-in-page,
+.section-2b,
+footer ul,
+.team-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.hero-content-container .hero-image-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-content-container .hero-image-container img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  margin: 10px 15px;
+  box-shadow: 7px 7px rgb(182, 179, 179);
+}
+
+.hero-content-container .hero-image-container p {
+  padding: 5px;
+  margin: 0 10px 15px;
+  border-radius: 3px;
+  background-color: #EEEEEE;
+  color: rgb(20, 135, 180);
+}
+
+/* SECTION 1 and SECTION 3 */
+.section-1,
+.section-3 {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+
+
+.section-1-logo,
+.section-1b img,
+.section-3b img {
+  display: block;
+  height: 70px;
+  margin: 10px auto;
+  border-radius: 100%;
+}
+
+
+
+.section-1b div {
+  margin: 20px;
+  padding: 10px;
+}
+
+.section-1b img {
+  box-shadow: 2px 7px rgb(182, 179, 179);
+  border-radius: 0%;
+}
+
+/* SECTION 2 */
+.section-2 {
+  background-color: rgb(20, 135, 180);
+  padding: 15px;
+  /* border-radius: 50%; */
+}
+
+.section-2a {
+  text-align: center;
+  margin: 30px 10px;
+}
+
+.section-2a i,
+.section-3a i {
+  background-color: rgb(17, 110, 153);
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.section-2b {
+  margin: 10px;
+}
+
+.section-2b .section-2b-child-div {
+  border-radius: 10px;
+  background-color: white;
+  height: 150px;
+  width: 250px;
+  padding: 10px;
+  margin: 20px 10px;
+  box-shadow: 2px 10px rgb(182, 179, 179);
+}
+
+.section-2b .section-2b-child-div img {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+/* SECTION 3 */
+.section-3 {
+  border-radius: 0 0 70% 0;
+
+}
+
+
+
+/* SECTION 4 */
+
+.section-4 {
+  padding: 50px 10px;
+  background-color: rgb(20, 135, 180);
+  margin: 20px 0 0;
+  border-radius: 65% 65% 0 0;
+}
+
+.section-4a,
+.section-4b button {
+  margin: 30px;
+}
+
+.section-4a {
+  width: 45%;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: rgb(17, 110, 153);
+  padding: 20px;
+}
+
+
+
+footer ul li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+/* LOG IN CSS */
+.log-in-page {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.log-in-page div {
+  margin: 10px;
+  padding: 20px 10px;
+}
+
+.logo-ad img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+
+.sign-up img,
+.log-in img {
+  display: block;
+  height: 70px;
+  margin: 30px auto;
+}
+
+.log-in-page form input,
+.log-in-page form button {
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  margin: 20px auto;
+  border-radius: 30px;
+
+}
+
+.log-in-page form input[type="checkbox"] {
+  display: inline;
+  width: auto;
+
+}
+
+.sign-up-link,
+.log-in-page a {
+  border: none;
+  background-color: transparent;
+  color: rgb(17, 110, 153);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sign-up-link:hover {
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+.log-in a {
+  float: right;
+  margin: 10px 0;
+
+}
+
+.hide-form,
+.logo-ad {
+  display: none;
+}
+
+/* ABOUT PAGE */
+
+
+.about-main {
+  color: white;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 0%;
+}
+
+
+.about-main button,
+.team-info {
+  margin: 20px 0;
+}
+
+.team-info img {
+  width: 300px;
+  margin: 10px 30px;
+}
+
+.team-member {
+  width: 70%;
+  text-align: center;
+  margin: 30px;
+}
+
+.team-member p {
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET VIEW */
+@media all and (min-width: 768px) {}
+
+/* LAPTOP SCREEN */
+@media all and (min-width: 1024px) {
+  .menu-bar {
+    display: none;
+  }
+
+  .menu-links {
+    width: auto;
+    display: block;
+  }
+
+  .menu-links a {
+    display: inline;
+  }
+
+  /* MAIN SECTION */
+  .hero-section {
+    padding: 50px 10px;
+    text-align: left;
+    border-radius: 0 0 60% 45%;
+  }
+
+  .hero-content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-content-container .hero-button-container {
+    width: 45%;
+  }
+
+  .hero-content-container .hero-image-container img {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* SECTION 1 */
+  .section-1b {
+    text-align: left;
+  }
+
+  .section-1-logo,
+  .section-1b img {
+    height: 70px;
+  }
+
+  .section-1b img {
+    margin-left: 0;
+  }
+
+  /* SECTION 2 */
+  .section-2 {
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  .section-2a {
+    margin: 30px 10px 80px;
+  }
+
+  .section-2b {
+    margin: 30px;
+  }
+
+  .section-2b .section-2b-child-div {
+    height: 250px;
+    width: 350px;
+    padding: 20px;
+
+
+  }
+
+  .section-2b .section-2b-child-div img {
+    height: 20px;
+    width: 20px;
+
+  }
+
+  /* LOG IN PAGE */
+  .log-in-page form input,
+  .log-in-page form button {
+    width: 80%;
+  }
+
+  .logo-ad {
+    display: block;
+  }
+
+  /* ABOUT PAGE */
+  .team-member {
+    width: 30%;
+
+  }
+}
+
+/* Animation for menu links */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Animation for menu bar */
+@keyframes rotateIn {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateOut {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}

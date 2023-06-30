@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Brawler
+font link: https://fonts.google.com/specimen/Brawler
+font author: Cyreal
+font author site: http://www.cyreal.org/
+
+
+icon designer: Zech Nelson
+icon designer link: /saltlessco
+        
+{"bg":"transparent","icon-gradient-0":"#000A68","icon-gradient-1":"#00C4EE","font":"#000000","slogan":"#141414"}
+      
